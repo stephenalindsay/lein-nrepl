@@ -2,6 +2,8 @@
 
 nREPL plugin for leiningen.
 
+NOTE: Hastily cobbled together, not really tested yet.
+
 ## Usage
 
 lein nrepl
