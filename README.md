@@ -2,11 +2,11 @@
 
 nREPL plugin for leiningen.
 
-NOTE: Hastily cobbled together, not really tested yet.
+Work in progress. Starts nREPL server, and opens up client connection to that server.
 
 ## Usage
 
-lein nrepl
+lein trampoline nrepl
 
 ## License
 
