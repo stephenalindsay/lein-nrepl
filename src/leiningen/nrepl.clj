@@ -7,11 +7,11 @@
    (let [p (Integer. port)]
      (eval-in-project
        project
-       `(~'do
+       `(do
             (println "Starting nREPL on port:" ~p )
-            (let [[ss# _#] (~'clojure.tools.nrepl/start-server ~p)]
-              (~'println "Running.")
-              (let [connection# (~'clojure.tools.nrepl/connect "localhost" (.getLocalPort ss#))
+            (let [[ss# _#] (clojure.tools.nrepl/start-server ~p)]
+              (println "Running.")
+              (let [connection# (clojure.tools.nrepl/connect "localhost" (.getLocalPort ss#))
                     prompt#     #(print (str % "=> "))
                     err#        print
                     out#        print
@@ -28,7 +28,7 @@
                                (when (:out res#) (out# (:out res#)))
                                (when (:err res#) (err# (:err res#)))
                                (:ns res#))))))))
-            (~'Thread/sleep Long/MAX_VALUE))
+            (Thread/sleep Long/MAX_VALUE))
        nil
        nil
        '(require 'clojure.tools.nrepl)
