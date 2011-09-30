@@ -33,4 +33,4 @@
        nil
        '(require 'clojure.tools.nrepl)
        )))
-  ([project] (nrepl project 11011)))
+  ([project] (nrepl project 7888)))
