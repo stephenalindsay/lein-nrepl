@@ -4,6 +4,8 @@ nREPL plugin for leiningen.
 
 Work in progress. Starts nREPL server for project, and opens up client connection to that server.
 
+NOTE: nREPL has been redesigned and therefore this plugin is out of date and should not be used.
+
 ## Installation
 
 Add to project.clj:
